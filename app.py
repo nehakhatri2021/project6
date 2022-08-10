@@ -5,14 +5,14 @@ import pickle
 
 
 app = Flask(__name__)
-modelKNN=pickle.load(open('KNN_placed.pkl', 'rb')) 
-modelRF=pickle.load(open('RandomForest_placed.pkl', 'rb')) 
-modelrbf=pickle.load(open('rbf_placed.pkl', 'rb')) 
-modelliner=pickle.load(open('liner_placed.pkl', 'rb')) 
-modelpoly=pickle.load(open('poly_placed.pkl', 'rb')) 
-modelsigmoid=pickle.load(open('sigmoid_placed.pkl', 'rb'))
-modeldt=pickle.load(open('decisiontree_placed.pkl', 'rb')) 
-modellogic=pickle.load(open('logistic_placed.pkl', 'rb'))
+modelKNN=pickle.load(open('KNN_model.pkl', 'rb')) 
+modelRF=pickle.load(open('RandomForest_model.pkl', 'rb')) 
+modelrbf=pickle.load(open('rbf_model.pkl', 'rb')) 
+modelliner=pickle.load(open('liner_model.pkl', 'rb')) 
+modelpoly=pickle.load(open('poly.pkl', 'rb')) 
+modelsigmoid=pickle.load(open('sigmoid_model.pkl', 'rb'))
+modeldt=pickle.load(open('decisiontree_model.pkl', 'rb')) 
+modellogic=pickle.load(open('logistic.pkl', 'rb'))
 
 @app.route('/')
 def home():
